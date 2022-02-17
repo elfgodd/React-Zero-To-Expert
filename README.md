@@ -10,17 +10,17 @@
 
 3. Objeto Literal:
 
-4. arreglos: Array.prototype.map()
+4. Arreglos: Array.prototype.map()
    https://developer.mozilla.org/es/docs/Glossary/array
 
    https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 
-5. funciones:
+5. Funciones:
    https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions
 
-6. desestructuración de objetos:
+6. Desestructuración de objetos:
    https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-7. desestructuración de arreglos:
+7. Desestructuración de arreglos:
    mismo link que el punto 6
 
 8. Import, export y funciones comunes de arreglos
@@ -29,3 +29,6 @@
 
    Array.prototype.filter():
    https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+9. Promise:
+   https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise

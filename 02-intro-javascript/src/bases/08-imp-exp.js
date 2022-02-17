@@ -16,19 +16,19 @@ console.log('\n')
 // Encontrar el heroe segun su id
 
 // solucion corta
-const getHeroesById = (id) => heroes.find((heroe) => heroe.id === id)
+const getHeroeById = (id) => heroes.find((heroe) => heroe.id === id)
 
 // Solucion mediana
-// const getHeroesById = (id) => {
+// const getHeroeById = (id) => {
 //   return heroes.find((heroe) => heroe.id === id)
 // }
 
-console.log(getHeroesById(2))
+console.log(getHeroeById(2))
 console.log('\n')
-console.log(getHeroesById(3))
+console.log(getHeroeById(3))
 
 // Solucion larga
-// const getHeroesById = (id) => {
+// const getHeroeById = (id) => {
 //   return heroes.find((heroe) => {
 //     if (heroe.id === id) {
 //       return true
@@ -38,7 +38,7 @@ console.log(getHeroesById(3))
 //   })
 // }
 
-// console.log(getHeroesById(2))
+// console.log(getHeroeById(2))
 
 // Encontrar todos los owner ya sea de DC or Marvel
 console.log('\n')
