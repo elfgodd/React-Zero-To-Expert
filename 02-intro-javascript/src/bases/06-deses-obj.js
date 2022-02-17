@@ -1,4 +1,4 @@
-// Desestructuracion
+// Desestructuracion de Objetos
 // Asignacion Desestructurada
 
 const persona = {
