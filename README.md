@@ -30,5 +30,8 @@
    Array.prototype.filter():
    https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
-9. Promise:
+9. Promesas:
    https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+10. Fetch API:
+    https://developer.mozilla.org/es/docs/Web/API/Fetch_API
