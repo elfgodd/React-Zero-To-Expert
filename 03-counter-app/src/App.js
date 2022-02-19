@@ -1,19 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const App = ({ saludo }) => {
+const App = () => {
   return (
     <>
-      <h1>{saludo}</h1>
-
-      <p>Mi segunda aplicacion</p>
+      <h1>App</h1>
     </>
   )
-}
-
-App.propTypes = {
-  saludo: PropTypes.string,
-  // saludo: PropTypes.string.isRequired,
 }
 
 export default App
