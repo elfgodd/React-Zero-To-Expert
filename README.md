@@ -1,8 +1,8 @@
 # React: De cero a experto ( Hooks y MERN )
 
-### 01 intro react
+### 01 introduccion a react
 
-### 02 intro javascript
+### 02 introduccion a javascript moderno
 
 1. Const & Let:
 
@@ -49,3 +49,15 @@ Terminamos la sección de reforzamiento de JavaScript
 Pero recuerden que esto es para entrar en calor y que lo temas principales de JavaScript que necesito que conozcan estén cubiertos, pero les recomiendo que cualquier duda adicional sobre el lenguaje, sobre métodos y demás, la consulten aquí
 
 https://developer.mozilla.org/es/
+
+### 03 Primeros pasos en React
+
+1 Primera aplicación de React:
+https://create-react-app.dev/
+
+2 Estructura de directorios
+https://developers.google.com/search/docs/advanced/robots/intro?hl=es&visit_id=637807502550419828-2368103718&rd=1
+
+https://developers.google.com/web/ilt/pwa
+
+https://create-react-app.dev/docs/available-scripts/
