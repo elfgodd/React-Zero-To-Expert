@@ -5,8 +5,6 @@ import CounterApp from './CounterApp'
 
 import './index.css'
 
-const saludo = <h1>Hola Mundo</h1>
-
 const divRoot = document.querySelector('#root')
 
 // ReactDOM.render(<App saludo='Hola, soy goku' />, divRoot)
