@@ -102,3 +102,7 @@ https://es.reactjs.org/docs/events.html
 ### 5. useState - Hook:
 
 https://es.reactjs.org/docs/hooks-intro.html
+
+### 6. Test, Jest:
+
+https://jestjs.io/
