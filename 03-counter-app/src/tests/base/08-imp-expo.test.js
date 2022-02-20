@@ -43,8 +43,6 @@ describe('Pruebas en funciones de Heroes', () => {
     const owner = 'Marvel'
     const heroes = getHeroesByOwner(owner)
 
-    expect(heroes.length).toBe(2)
+    expect(heroes.length).toBe(2) // length = 2 // toBe
   })
-
-  // length = 2 // toBe
 })
