@@ -1,32 +1,23 @@
-
-
 // const getImagenPromesa = () => new Promise( resolve => resolve('https://ajskdhaskjdhajs.com') )
 // getImagenPromesa().then( console.log );
 
-const getImagen = async() => {
+export const getImagen = async () => {
+  try {
+    const apiKey = '91WiRxPNNNfsSYcNJeD6u2tNlR1hKfMm'
+    // const apiKey = '91WiRxPNNNfsSYcNJeD6u2tNlR1hKfMm1111' // wrong API
+    const resp = await fetch(
+      `http://api.giphy.com/v1/gifs/random?api_key=${apiKey}`
+    )
+    const { data } = await resp.json()
 
-    try {
+    const { url } = data.images.original
 
-        const apiKey = 'C1khQe3Z7R1W2lfTO9myKeuShdqFYSGC';
-        const resp   = await fetch(`http://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`);
-        const { data } = await resp.json(); 
-
-        const { url } = data.images.original;
-
-        const img = document.createElement('img');
-        img.src = url;
-        document.body.append( img );
-
-    } catch (error) {
-        // manejo del error
-        console.error(error)
-    }
-    
-    
-    
+    return url
+  } catch (error) {
+    // manejo del error
+    // console.error(error)
+    return 'No existe'
+  }
 }
 
- getImagen();
-
-
-
+getImagen()
