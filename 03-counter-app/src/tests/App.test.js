@@ -11,6 +11,19 @@ describe('Pruebas en <App />', () => {
 
     expect(wrapper).toMatchSnapshot()
   })
+
+  test('debe de mostrar el subtitulo enviado por props', () => {
+    const saludo = 'Hola, soy Goku'
+    const subTitulo = 'Soy un subTitulo'
+
+    const wrapper = shallow(<App saludo={saludo} subtitulo={subTitulo} />)
+
+    // document.querySelector('p') estamos haciendo algo asi con el find
+    const textoParrafo = wrapper.find('p').text()
+    // console.log(textoParrafo)
+
+    expect(textoParrafo).toBe(subTitulo)
+  })
 })
 
 // describe('Pruebas en <App />', () => {
