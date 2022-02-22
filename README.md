@@ -106,3 +106,31 @@ https://es.reactjs.org/docs/hooks-intro.html
 ### 6. Test, Jest:
 
 https://jestjs.io/
+
+Error in Jest: https://github.com/jest-community/eslint-plugin-jest/blob/v25.7.0/docs/rules/no-conditional-expect.md
+
+https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+
+### 6. Test, Enzyme:
+
+https://enzymejs.github.io/enzyme/
+
+https://github.com/wojtekmaj/enzyme-adapter-react-17
+
+https://www.npmjs.com/package/enzyme-to-json
+
+### Tarea en <CounterApp />
+
+- Crear las siguientes pruebas para el <CounterApp />
+
+  - debe de mostrar <CounterApp /> correctamente (hacer match con un snapshot)
+    y sus valores por defecto
+
+  - debe de mostrar el valor por defecto de 100
+  - usar el wrapper.find, tomando el elemento html donde se muestra el valor del contador
+
+## 04 Gif Expert App
+
+https://es.reactjs.org/docs/faq-structure.html
+
+https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
