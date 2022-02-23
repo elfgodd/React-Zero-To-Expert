@@ -14,7 +14,9 @@ const AddCategory = ({ setcategories }) => {
     console.log('submit hecho')
 
     if (inputValue.trim().length > 2) {
-      setcategories((cats) => [...cats, inputValue])
+      // setcategories((cats) => [...cats, inputValue])
+      // para que inserte primero la nueva categoria
+      setcategories((cats) => [inputValue, ...cats])
       setInputValue('')
     }
   }
