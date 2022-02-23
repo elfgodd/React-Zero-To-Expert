@@ -138,3 +138,7 @@ https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b
 ### 1. Fetch API - Obtener las imágenes deseadas:
 
 https://developers.giphy.com/docs/api/endpoint/#search
+
+### 2. Animaciones por CSS en nuestra aplicación
+
+https://animate.style/

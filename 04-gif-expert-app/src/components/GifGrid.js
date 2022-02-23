@@ -46,10 +46,12 @@ const GifGrid = ({ category }) => {
   // getGifs()
   return (
     <>
-      <h3>{category}</h3>
+      <h3 className='animate__animated animate__flip'>{category}</h3>
       {/* {loading ? 'Cargando...' : 'Data cargada'} */}
       {/* {loading ? <p>Loading</p>> : null} */}
-      {loading && <p>Loading...</p>}
+      {loading && (
+        <p className='animate__animated animate__flash'>Loading...</p>
+      )}
       <div className='card-grid'>
         {images.map((img) => (
           <GifGridItem key={img.id} {...img} />
