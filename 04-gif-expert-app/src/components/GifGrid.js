@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+
 // const apiKey = '91WiRxPNNNfsSYcNJeD6u2tNlR1hKfMm'
 const GifGrid = ({ category }) => {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    getGifs()
+  }, [])
+
   const getGifs = async () => {
     const url =
       'https://api.giphy.com/v1/gifs/search?api_key=91WiRxPNNNfsSYcNJeD6u2tNlR1hKfMm&q=rick and morty&limit=10'
@@ -20,7 +27,7 @@ const GifGrid = ({ category }) => {
     console.log(gifs)
   }
 
-  getGifs()
+  // getGifs()
   return (
     <>
       <h3>{category}</h3>
