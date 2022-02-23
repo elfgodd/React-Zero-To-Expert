@@ -1,15 +1,24 @@
-import React, { useState, useEffect } from 'react'
-import { getGifs } from '../helpers/getGifs'
-import GifGridItem from './GifGridItem'
+// import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { useFetchGifs } from '../hooks/useFetchGifs'
+// import GifGridItem from './GifGridItem'
+// import { getGifs } from '../helpers/getGifs'
 
 // const apiKey = '91WiRxPNNNfsSYcNJeD6u2tNlR1hKfMm'
 const GifGrid = ({ category }) => {
-  const [images, setImages] = useState([])
+  // const [images, setImages] = useState([])
 
-  useEffect(() => {
-    // getGifs(category).then((imgs) => setImages(imgs))
-    getGifs(category).then(setImages)
-  }, [category])
+  // importing custom hook
+  // const state = useFetchGifs()
+  // console.log(state)
+  const { loading } = useFetchGifs()
+  // console.log(data)
+  // console.log(loading)
+
+  // useEffect(() => {
+  //   // getGifs(category).then((imgs) => setImages(imgs))
+  //   getGifs(category).then(setImages)
+  // }, [category])
 
   // const getGifs = async () => {
   //   // const url =
@@ -38,22 +47,24 @@ const GifGrid = ({ category }) => {
   return (
     <>
       <h3>{category}</h3>
-      <div className='card-grid'>
-        {images.map((img) => (
-          <GifGridItem key={img.id} {...img} />
-        ))}
-        {/* {images.map((img) => (
-          <GifGridItem key={img.id} img={img} />
-        ))} */}
-        {/* {images.map(({ id, title }) => (
-          <li key={id}>{title}</li>
-        ))} */}
-        {/* {images.map((img) => (
-          <li key={img.id}>{img.title}</li>
-        ))} */}
-      </div>
+      {loading ? 'Cargando...' : 'Data cargada'}
     </>
   )
 }
 
 export default GifGrid
+
+// {/* <div className='card-grid'>
+//         {images.map((img) => (
+//           <GifGridItem key={img.id} {...img} />
+//         ))}
+//         {/* {images.map((img) => (
+//           <GifGridItem key={img.id} img={img} />
+//         ))} */}
+//         {/* {images.map(({ id, title }) => (
+//           <li key={id}>{title}</li>
+//         ))} */}
+//         {/* {images.map((img) => (
+//           <li key={img.id}>{img.title}</li>
+//         ))} */}
+//        </div> */}
