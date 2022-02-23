@@ -1,7 +1,7 @@
 // import React, { useState, useEffect } from 'react'
 import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
-// import GifGridItem from './GifGridItem'
+import GifGridItem from './GifGridItem'
 // import { getGifs } from '../helpers/getGifs'
 
 // const apiKey = '91WiRxPNNNfsSYcNJeD6u2tNlR1hKfMm'
@@ -11,7 +11,7 @@ const GifGrid = ({ category }) => {
   // importing custom hook
   // const state = useFetchGifs()
   // console.log(state)
-  const { loading } = useFetchGifs()
+  const { data: images, loading } = useFetchGifs(category)
   // console.log(data)
   // console.log(loading)
 
@@ -47,24 +47,31 @@ const GifGrid = ({ category }) => {
   return (
     <>
       <h3>{category}</h3>
-      {loading ? 'Cargando...' : 'Data cargada'}
+      {/* {loading ? 'Cargando...' : 'Data cargada'} */}
+      {/* {loading ? <p>Loading</p>> : null} */}
+      {loading && <p>Loading...</p>}
+      <div className='card-grid'>
+        {images.map((img) => (
+          <GifGridItem key={img.id} {...img} />
+        ))}
+      </div>
     </>
   )
 }
 
 export default GifGrid
 
-// {/* <div className='card-grid'>
-//         {images.map((img) => (
-//           <GifGridItem key={img.id} {...img} />
-//         ))}
-//         {/* {images.map((img) => (
-//           <GifGridItem key={img.id} img={img} />
-//         ))} */}
-//         {/* {images.map(({ id, title }) => (
-//           <li key={id}>{title}</li>
-//         ))} */}
-//         {/* {images.map((img) => (
-//           <li key={img.id}>{img.title}</li>
-//         ))} */}
-//        </div> */}
+// <div className='card-grid'>
+//   {images.map((img) => (
+//     <GifGridItem key={img.id} {...img} />
+//   ))}
+//   {/* {images.map((img) => (
+//     <GifGridItem key={img.id} img={img} />
+//   ))} */}
+//   {/* {images.map(({ id, title }) => (
+//     <li key={id}>{title}</li>
+//   ))} */}
+//   {/* {images.map((img) => (
+//     <li key={img.id}>{img.title}</li>
+//   ))} */}
+// </div>
