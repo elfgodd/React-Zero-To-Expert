@@ -134,3 +134,7 @@ https://www.npmjs.com/package/enzyme-to-json
 https://es.reactjs.org/docs/faq-structure.html
 
 https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
+
+### 1. Fetch API - Obtener las imágenes deseadas:
+
+https://developers.giphy.com/docs/api/endpoint/#search
