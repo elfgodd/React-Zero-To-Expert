@@ -38,6 +38,7 @@ describe('Pruebas en <GifGridItem.js />', () => {
     // console.log(div.prop('className')) // card animate__animated animate__flip
     const className = div.prop('className')
 
+    // 2 maneras de hacer el espect, toBe and not.toBe
     // expect(className.includes('animate__flip')).toBe(true)
     expect(className.includes('animate__flip')).not.toBe(false)
   })
