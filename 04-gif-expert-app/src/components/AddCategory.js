@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-export const AddCategory = ({ setcategories }) => {
+export const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState('') // useState() undefined
 
   const handleInputChange = (e) => {
@@ -12,15 +12,16 @@ export const AddCategory = ({ setcategories }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('submit hecho')
+    console.log('handleSubmit, submit hecho', inputValue)
 
     if (inputValue.trim().length > 2) {
-      // setcategories((cats) => [...cats, inputValue])
+      // setCategories((cats) => [...cats, inputValue])
       // para que inserte primero la nueva categoria
-      setcategories((cats) => [inputValue, ...cats])
+      setCategories((cats) => [inputValue, ...cats])
       setInputValue('')
     }
   }
+
   return (
     <>
       {/* <h1>{inputValue}</h1> */}
@@ -41,3 +42,5 @@ AddCategory.propTypes = {
 }
 
 // export default AddCategory
+// este codigo de abajo es para test enzyme
+// {/* <p>{inputValue}</p> */}
