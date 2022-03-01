@@ -36,4 +36,20 @@ describe('Pruebas en <AddCategory />', () => {
     // expect(setCategories).toHaveBeenCalled() // this fails
     expect(setCategories).not.toHaveBeenCalled()
   })
+  test('debe de llamar el setCategories y limpiar la caja de texto', () => {
+    const value = 'Hola Mundo'
+    // 1. simular el inputChange
+    wrapper.find('input').simulate('change', { target: { value } })
+    // 2. simular el submit
+    wrapper.find('form').simulate('submit', { preventDefault() {} })
+    // 3. setCategories se debe de haber llamado
+    expect(setCategories).toHaveBeenCalled()
+    // si quiero ver si se a llamado mas de 1 vez o varias
+    // expect(setCategories).toHaveBeenCalledTimes(2)
+    expect(setCategories).toHaveBeenCalledTimes(1)
+    // estoy esperando que se haya llamado con cualquier tipo de funcion
+    expect(setCategories).toHaveBeenCalledWith(expect.any(Function))
+    // 4. el valor del input debe de estar ''
+    expect(wrapper.find('input').prop('value')).toBe('')
+  })
 })
