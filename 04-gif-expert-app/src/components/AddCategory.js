@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-export const AddCategory = ({ setCategories }) => {
+const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState('') // useState() undefined
 
   const handleInputChange = (e) => {
@@ -41,6 +41,6 @@ AddCategory.propTypes = {
   setCategories: PropTypes.func.isRequired,
 }
 
-// export default AddCategory
+export default AddCategory
 // este codigo de abajo es para test enzyme
 // {/* <p>{inputValue}</p> */}

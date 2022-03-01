@@ -13,7 +13,6 @@ describe('Pruebas en <AddCategory />', () => {
 
   beforeEach(() => {
     jest.clearAllMocks()
-    jest.to
     wrapper = shallow(<AddCategory setCategories={setCategories} />)
   })
 
