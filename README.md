@@ -142,3 +142,30 @@ https://developers.giphy.com/docs/api/endpoint/#search
 ### 2. Animaciones por CSS en nuestra aplicación
 
 https://animate.style/
+
+## 05 Generando el build de produccion y despliegues en GitHub Pages
+
+http-server: a simple static HTTP server:
+https://www.npmjs.com/package/http-server
+
+https://docs.github.com/en/enterprise/2.13/user/articles/setting-your-username-in-git
+
+`npm run build`
+
+`npm install --global http-server`
+
+Para correr el servidor despues del build, debemos estar dentro de la carpeta build
+y correr el siguiente comando
+`http-server -o`
+
+## 06 Testing - Probando la aplicacion de GifExpert
+
+https://enzymejs.github.io/enzyme/
+
+enzyme-to-json:  
+https://www.npmjs.com/package/enzyme-to-json
+
+https://github.com/wojtekmaj/enzyme-adapter-react-17
+
+Pruebas sobre customHooks:  
+https://react-hooks-testing-library.com/
