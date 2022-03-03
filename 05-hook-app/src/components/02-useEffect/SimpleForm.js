@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Message from './Message'
 
 import './effects.css'
 
@@ -64,6 +65,8 @@ const SimpleForm = () => {
           onChange={handleInputChange}
         ></input>
       </div>
+      {name === '123' && <Message />}
+      {/* {name && <Message />} */}
     </>
   )
 }
