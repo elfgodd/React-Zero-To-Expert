@@ -5,9 +5,10 @@ import ReactDOM from 'react-dom'
 // import FormWithCustomHook from './components/02-useEffect/FormWithCustomHook'
 // import FocusScreen from './components/04-useRef/FocusScreen'
 // import HookApp from './HookApp'
+import Memorize from './components/06-memos/Memorize'
 // import MultipleCustomHooks from './components/03-examples/MultipleCustomHooks'
-import Layout from './components/05-useLayoutEffect/Layout'
+// import Layout from './components/05-useLayoutEffect/Layout'
 // import RealExampleRef from './components/04-useRef/RealExampleRef'
 // import SimpleForm from './components/02-useEffect/SimpleForm'
 
-ReactDOM.render(<Layout />, document.getElementById('root'))
+ReactDOM.render(<Memorize />, document.getElementById('root'))
