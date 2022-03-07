@@ -1,5 +1,5 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 // import CallbackHook from './components/06-memos/CallbackHook'
 // import CounterApp from './components/01-useState/CounterApp'
@@ -14,7 +14,8 @@
 // import RealExampleRef from './components/04-useRef/RealExampleRef'
 // import SimpleForm from './components/02-useEffect/SimpleForm'
 // import Padre from './components/07-tarea-memo/Padre'
+import TodoApp from './components/08-useReducer/TodoApp'
 
-// ReactDOM.render(<Padre />, document.getElementById('root'))
+ReactDOM.render(<TodoApp />, document.getElementById('root'))
 
-import './components/08-useReducer/intro-reducer'
+// import './components/08-useReducer/intro-reducer'
