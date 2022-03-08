@@ -14,8 +14,8 @@ import ReactDOM from 'react-dom'
 // import RealExampleRef from './components/04-useRef/RealExampleRef'
 // import SimpleForm from './components/02-useEffect/SimpleForm'
 // import Padre from './components/07-tarea-memo/Padre'
-import TodoApp from './components/08-useReducer/TodoApp'
+import MainApp from './components/09-useContext/MainApp'
 
-ReactDOM.render(<TodoApp />, document.getElementById('root'))
+ReactDOM.render(<MainApp />, document.getElementById('root'))
 
 // import './components/08-useReducer/intro-reducer'

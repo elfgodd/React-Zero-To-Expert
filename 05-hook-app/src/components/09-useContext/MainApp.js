@@ -1,11 +1,8 @@
 import React from 'react'
+import AppRouter from './AppRouter'
 
 const MainApp = () => {
-  return (
-    <>
-      <h1>MainApp</h1>
-    </>
-  )
+  return <AppRouter />
 }
 
 export default MainApp

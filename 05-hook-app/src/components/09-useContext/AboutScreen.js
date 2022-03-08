@@ -1,11 +1,11 @@
 import React from 'react'
 
-const MainApp = () => {
+const AboutScreen = () => {
   return (
     <>
-      <h1>MainApp</h1>
+      <h1>AboutScreen</h1>
     </>
   )
 }
 
-export default MainApp
+export default AboutScreen
