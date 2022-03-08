@@ -9,12 +9,14 @@ const AppRouter = () => {
   return (
     <Router>
       <NavBar />
-      <Routes>
-        <Route exact path='/' element={<HomeScreen />} />
-        <Route exact path='about' element={<AboutScreen />} />
-        <Route exact path='login' element={<LoginScreen />} />
-        <Route path='*' element={<HomeScreen />} />
-      </Routes>
+      <div className='container mt-3'>
+        <Routes>
+          <Route exact path='/' element={<HomeScreen />} />
+          <Route exact path='about' element={<AboutScreen />} />
+          <Route exact path='login' element={<LoginScreen />} />
+          <Route path='*' element={<HomeScreen />} />
+        </Routes>
+      </div>
     </Router>
   )
 }
