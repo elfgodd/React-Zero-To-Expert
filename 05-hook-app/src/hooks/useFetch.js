@@ -16,6 +16,7 @@ const useFetch = (url) => {
 
   useEffect(() => {
     setState({ data: null, loading: true, error: null })
+
     fetch(url)
       .then((resp) => resp.json())
       .then((data) => {
@@ -27,11 +28,17 @@ const useFetch = (url) => {
           })
         }
       })
+      .catch(() => {
+        setState({
+          data: null,
+          loading: false,
+          error: 'No se pudo cargar la info',
+        })
+      })
   }, [url])
 
   return state
 }
-
 export default useFetch
 
 // // Version 2
@@ -74,7 +81,7 @@ export default useFetch
 
 // export default useFetch
 
-console.log('#####')
+// console.log('#####')
 
 // // Version 1
 // import { useState, useEffect } from 'react'
