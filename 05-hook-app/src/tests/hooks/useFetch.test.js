@@ -18,7 +18,7 @@ describe('Pruebas en useFetch', () => {
       useFetch('https://www.breakingbadapi.com/api/quotes/1')
     )
     // console.log(waitForNextUpdate)
-    await waitForNextUpdate()
+    await waitForNextUpdate({ timeout: 2500 })
     const { data, loading, error } = result.current
 
     // expect(data.length).toBe(2)
@@ -33,7 +33,7 @@ describe('Pruebas en useFetch', () => {
     )
     // console.log(waitForNextUpdate)
 
-    await waitForNextUpdate()
+    await waitForNextUpdate({ timeout: 2500 })
     const { data, loading, error } = result.current
 
     expect(data).toBe(null)
