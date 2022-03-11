@@ -2,16 +2,17 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import MultipleCustomHooks from '../../../components/03-examples/MultipleCustomHooks'
 import useFetch from '../../../hooks/useFetch'
-// import useCounter from '../../../components/03-examples/useCounter'
 import useCounter from '../../../components/03-examples/useCounter'
 
 jest.mock('../../../hooks/useFetch')
-jest.mock('../../components/03-examples/useCounter')
+jest.mock('../../../components/03-examples/useCounter')
 
 describe('Pruebas en <MultipleCustomHooks />', () => {
-  useCounter.mockReturnValue({
-    counter: 10,
-    increment: () => {},
+  beforeEach(() => {
+    useCounter.mockReturnValue({
+      counter: 1,
+      increment: () => {},
+    })
   })
 
   test('debe de mostrarse correctamente', () => {
