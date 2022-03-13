@@ -19,7 +19,7 @@ const TodoAdd = ({ handleAddTodo }) => {
     }
 
     handleAddTodo(newTodo)
-    reset()
+    //reset()
   }
 
   return (
