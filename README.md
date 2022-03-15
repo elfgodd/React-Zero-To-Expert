@@ -172,4 +172,55 @@ https://react-hooks-testing-library.com/
 
 ## 05 Hook App
 
-### 1.
+### 1. useLayoutEffect:
+
+https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect
+
+### 2. React.memo:
+
+Es una funcion que va regresar la forma memorizada de mi componente,
+y solo se va disparadas si las props cambian
+
+### 2. React.memo:
+
+2 Casos de uso principales
+
+1 Mandamos una funcion a un componente hijo
+
+### 3. useReducer:
+
+https://es.reactjs.org/docs/hooks-reference.html#usereducer
+
+// Manera sencilla
+const [state] = useReducer(reducer, initialState)
+// Manera completa
+const [state, dispatch] = useReducer(reducer, initialState, init)
+
+### 4. Guardar TODOs en LocalStorage:
+
+https://www.youtube.com/watch?v=hb8O0qRqiSk&t=2s
+
+### 5. Array.prototype.filter():
+
+El método filter() crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+### 5. useContext:
+
+https://v5.reactrouter.com/web/guides/quick-start
+
+### 6. Pruebas unitarias y integracion de - Hooks:
+
+https://enzymejs.github.io/enzyme/
+
+https://www.npmjs.com/package/enzyme-to-json
+
+https://react-hooks-testing-library.com/
+
+https://github.com/wojtekmaj/enzyme-adapter-react-17
+
+How to use waitForNextUpdate function in testing library react-hooks:
+'https://www.tabnine.com/code/javascript/functions/testing-library__react-hooks/waitForNextUpdate'
+
+https://reqres.in/api/users?page=2RealExampleRef
