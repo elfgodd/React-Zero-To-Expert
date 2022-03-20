@@ -1,10 +1,19 @@
 import { useContext } from 'react'
-import { Navigate } from 'react-router-dom'
+import { Navigate, useLocation } from 'react-router-dom'
 import { AuthContext } from '../auth/authContext'
 
 export const PrivateRoute = ({ children }) => {
   const { user } = useContext(AuthContext)
   // console.log(user)
+  // console.log('Pivate Route')
+  // const location = useLocation()
+  // console.log(location)
+  // localStorage.setItem('lastPath', location.pathname)
+  // console.log(location)
+
+  const { pathname, search } = useLocation()
+
+  localStorage.setItem('lastPath', pathname + search)
 
   return user.logged ? children : <Navigate to='/login' />
 }
