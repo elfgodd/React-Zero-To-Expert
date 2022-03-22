@@ -2,6 +2,13 @@ import { useMemo } from 'react'
 import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { getHeroById } from '../../selectors/getHeroById'
 
+// Manejo de imagenes metodos 1, 2, 3
+// Imagenes 2 Estatico
+// import batman from '../../assets/heroes/dc-batman.jpg'
+
+// Imagenes 3  WebPack manejo de imagenes
+const heroImages = require.context('../../assets/', true)
+
 export const HeroScreen = () => {
   const params = useParams()
   const { heroeId } = useParams()
@@ -18,20 +25,26 @@ export const HeroScreen = () => {
     return <Navigate to='/' />
   }
 
-  const { id, superhero, publisher, alter_ego, first_appearance, characters } =
-    hero
+  const { superhero, publisher, alter_ego, first_appearance, characters } = hero
 
   console.log(params)
   console.log(params.heroeId)
   console.log({ heroeId })
 
-  const imagePath = `/assets/${id}.jpg`
+  // Imagenes 1
+  // desde public/assets
+  // const imagePath = `/assets/${id}.jpg`
+  // src={`../assets/heroes/${heroeId}.jpg`}
+
+  //
 
   return (
     <div className='row mt-5'>
       <div className='col-4'>
         <img
-          src={imagePath}
+          // src={imagePath} // import
+          // src={heroImages(`./marvel-spider.jpg`)}
+          src={heroImages(`./${heroeId}.jpg`)}
           alt={superhero}
           className='img-thumbnail animate__animated animate__fadeInLeft'
         />
