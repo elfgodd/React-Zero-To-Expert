@@ -1,13 +1,13 @@
 import { useMemo } from 'react'
 import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { getHeroById } from '../../selectors/getHeroById'
-
+import { heroImages } from '../../helpers/heroImages'
 // Manejo de imagenes metodos 1, 2, 3
 // Imagenes 2 Estatico
 // import batman from '../../assets/heroes/dc-batman.jpg'
 
 // Imagenes 3  WebPack manejo de imagenes
-const heroImages = require.context('../../assets/', true)
+// const heroImages = require.context('../../assets/heroes', true)
 
 export const HeroScreen = () => {
   const params = useParams()
