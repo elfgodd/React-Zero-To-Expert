@@ -564,3 +564,22 @@ https://www.npmjs.com/package/@wojtekmaj/enzyme-adapter-react-17
 https://www.npmjs.com/package/enzyme-to-json
 
 ## Section 16: Bonus: Formas de trabajar con imagenes
+
+https://webpack.js.org/guides/dependency-management/#requirecontext
+
+## Section 17: JournalApp - SASS - Estructura y Diseño
+
+Temas puntuales de la sección
+¿Qué veremos en esta sección?
+
+SASS
+
+Diseño completo de la aplicación de forma manual
+
+Uso de funciones de SASS
+
+Configuración y uso de parciales
+
+Transiciones en SASS
+
+Esta sección está totalmente enfocada en aprender a utilizar SASS para crear nuestro estilo de la aplicación, la cual haremos todo nosotros de absoluto cero.
