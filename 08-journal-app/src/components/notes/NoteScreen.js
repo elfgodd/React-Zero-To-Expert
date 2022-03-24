@@ -8,12 +8,12 @@ export const NoteScreen = () => {
       <div className='notes__content'>
         <input
           type='text'
-          placeHolder='Some awesome title'
+          placeholder='Some awesome title'
           className='notes__title-input'
           autoComplete='off'
         />
         <textarea
-          placerholder='What happened today'
+          placeholder='What happened today'
           className='notes__textarea'
         ></textarea>
         <div className='notes__image'>
