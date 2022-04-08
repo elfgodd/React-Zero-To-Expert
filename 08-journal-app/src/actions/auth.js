@@ -1,3 +1,5 @@
+import { shallowEqual } from 'react-redux'
+import Swal from 'sweetalert2'
 import { firebase, googleAuthProvider } from '../firebase/firebase-config'
 import { types } from '../types/types'
 import { startLoading, finishLoading } from './ui'
@@ -17,6 +19,7 @@ export const startLoginEmailPassword = (email, password) => {
       .catch((err) => {
         console.log(err)
         dispatch(finishLoading())
+        Swal.fire('Error', err.message, 'error')
       })
   }
 }
@@ -35,6 +38,7 @@ export const startRegisterWithEmailPasswordName = (email, password, name) => {
       })
       .catch((err) => {
         console.log(err)
+        Swal.fire('Error', err.message, 'error')
       })
   }
 }
