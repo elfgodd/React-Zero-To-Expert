@@ -8,8 +8,7 @@ import { login } from '../actions/auth'
 import { useDispatch } from 'react-redux'
 import { PrivateRoute } from './PrivateRoute'
 import { PublicRoute } from './PublicRoute'
-import { loadNotes } from '../helpers/loadNotes'
-import { setNotes } from '../actions/notes'
+import { startLoadingNotes } from '../actions/notes'
 
 export const AppRouter = () => {
   const dispatch = useDispatch()
@@ -23,8 +22,7 @@ export const AppRouter = () => {
         dispatch(login(user.uid, user.displayName))
         setIsLoggedIn(true)
 
-        const notes = await loadNotes(user.uid)
-        dispatch(setNotes(notes))
+        dispatch(startLoadingNotes(user.uid))
       } else {
         setIsLoggedIn(false)
       }
