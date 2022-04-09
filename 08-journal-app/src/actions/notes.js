@@ -6,8 +6,8 @@ export const startNewNote = () => {
     // const state = getState()
     // console.log(state)
 
-    const uid = getState().auth.uid
-    console.log(uid)
+    const { uid } = getState().auth
+    // console.log(uid)
 
     const newNote = {
       title: '',
@@ -24,4 +24,9 @@ export const startNewNote = () => {
 export const activeNote = (id, note) => ({
   type: types.notesActive,
   payload: { id, ...note },
+})
+
+export const setNotes = (notes) => ({
+  type: types.notesLoad,
+  payload: notes,
 })
