@@ -569,6 +569,8 @@ https://webpack.js.org/guides/dependency-management/#requirecontext
 
 ## Section 17: JournalApp - SASS - Estructura y Diseño
 
+## Folder 08: Journal App
+
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
 
@@ -583,3 +585,204 @@ Configuración y uso de parciales
 Transiciones en SASS
 
 Esta sección está totalmente enfocada en aprender a utilizar SASS para crear nuestro estilo de la aplicación, la cual haremos todo nosotros de absoluto cero.
+
+### 1. Implementando rutas principales y rutas hijas
+
+https://v5.reactrouter.com/web/guides/quick-start
+
+### 2. Sass Partials
+
+https://sass-lang.com/documentation
+
+## Section 18: Redux - Que es y conceptos?
+
+¿Qué veremos en esta sección?
+
+Redux
+
+Store
+
+Middlewares
+
+Dispatch
+
+Actions
+
+State
+
+Acciones asíncronas
+
+Es una sección sumamente pequeña, pero quiero darles una explicación teórica sobre Redux antes de entrar en él, pero la ventaja es que para estas alturas, ya deberíamos de saber sobre el Reducer, el cual es el corazón del Redux, por consecuencia aprender Redux en este instante debería ser más fácil!
+
+## Section 19: Introduccion a Redux y autenticacion en Firebase
+
+Temas puntuales de la sección
+¿Qué veremos en esta sección?
+
+Redux aplicado en nuestro proyecto
+
+Firebase
+
+FireStore
+
+Redux Devtools
+
+Thunk
+
+Formularios
+
+Google SingIn
+
+Acciones Asíncronas
+
+Mantener el estado de la autenticación
+
+En esta sección configuraremos Redux en nuestro proyecto por primera vez, aplicado al inicio en la parte de la autenticación y mantener el estado de la misma a lo largo de toda la aplicación.
+
+### 1. Configurando Redux en nuestra aplicación
+
+https://es.redux.js.org/
+
+https://react-redux.js.org/
+
+https://github.com/zalmoxisus/redux-devtools-extension#usage
+
+### 2. Configuración inicial de Firebase
+
+https://firebase.google.com/docs/web/modular-upgrade
+
+https://firebase.google.com/
+
+1. Ir a la consola de Firebase
+2. Agregar projecto
+3. Agregar nombre
+4. Seleccionar que NO quiero Google Analitycs
+
+// Agregar Autenticacion
+
+1. Click en el TAB Autentication
+2. Click en Native providers: Email/Password
+3. Activar el boton de Email/Password unicamente
+4. Agregar el Auth de google, Agregar otro proveedor
+5. Activar el boton y agregar el correo que queremos para soporte
+
+// Instalar Firebase
+`npm install firebase@8.10.0`
+
+### 3. Thunk Middleware - Acciones asíncronas
+
+https://www.npmjs.com/package/redux-thunk
+
+// Firebase para SQL Developers Youtube Playlist
+https://www.youtube.com/playlist?list=PLCKuOXG0bPi29EkcAuVCln9ISbExcQk66
+
+### 4. Configurar Firebase y Google Sign-in
+
+1. Ir a la consola de Firebase, luego al proyecto
+2. Click en el icono de agregar Aplicacion Web
+3. Agregar un nombre, NO agregar hosting
+4. Terminar
+5. Click en el icono del App
+6. Click en el icono de Herramientas dentro del App
+7. Click en el boton de Config abajo
+8. Copiar configuracion
+9. Pegar en carpeta firebase/config
+10. listo
+
+### 5. Manejo de errores del formulario
+
+https://www.npmjs.com/package/validator
+
+`npm i validator`
+
+### 6. Mensajes de error
+
+https://sweetalert2.github.io/
+`npm install sweetalert2`
+
+## Section 20: JournalApp - Redux - CRUD en Firestore y subida de archivos
+
+Temas puntuales de la sección
+
+¿Qué veremos en esta sección?
+
+    CRUD hacia Firestore
+
+    Expandiendo nuestro estore añadiendo otros reducers
+
+    Seleccionar y subir archivos
+
+    Animaciones adicionales a nuestra aplicación
+
+    Limpieza en el logout
+
+Esta sección está enfocada ahora en las entradas de nuestro diario, asegurándose de que grabe únicamente en el documento del usuario autenticado.
+
+### 1. Crear una nueva nota
+
+1. Ir a la consola de Firebase
+2. Click en Create DataBase
+3. Escojer production mode
+4. Escojer la region deseada
+
+Collection, una collecion como una serie de datos, una lista, un arreglo
+
+// Reglas de la base de datos para no tener errores de permiso
+// Uncaught (in promise) FirebaseError: Missing or insufficient permissions.
+
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+```
+
+// Si esta Autenticado Login Active puede utilizar la WebApp
+
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth != null
+    }
+  }
+}
+```
+
+### 2. Mostrar las notas en el menú lateral
+
+https://momentjs.com/
+
+### 3. Cloudinary.com - Backend para subir imágenes
+
+https://cloudinary.com
+
+1. Crear cuenta / login
+2. Click en Settings el icono
+3. Click en Upload
+4. Upload presets: Click en Add upload preset
+
+```
+Upload preset name: react-journal
+Signing Mode: Unsigned
+```
+
+5. Copiar el Upload preset name: react-journal
+6. SAVE
+
+// Postman POST Upload image, usa tu cloud name ejemplo el mio es alienroom
+
+```
+https://api.cloudinary.com/v1_1/alienroom/upload
+Body: form-data
+
+KEY:                       | VALUE:
+file (change text to file) | search the to upload
+upload_preset              | react-journal
+
+```
