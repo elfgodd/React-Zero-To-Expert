@@ -1,14 +1,13 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
 
+import { Link } from 'react-router-dom'
 import { useForm } from '../../hooks/useForm'
 import { startLoginEmailPassword, startGoogleLogin } from '../../actions/auth'
 
 export const LoginScreen = () => {
   const dispatch = useDispatch()
   const { loading } = useSelector((state) => state.ui)
-  console.log(loading)
 
   const [formValues, handleInputChange] = useForm({
     email: 'elfgod@gmail.com',
@@ -19,17 +18,21 @@ export const LoginScreen = () => {
 
   const handleLogin = (e) => {
     e.preventDefault()
-    console.log(email, password)
     dispatch(startLoginEmailPassword(email, password))
   }
 
   const handleGoogleLogin = () => {
     dispatch(startGoogleLogin())
   }
+
   return (
     <>
       <h3 className='auth__title'>Login</h3>
-      <form onSubmit={handleLogin}>
+
+      <form
+        onSubmit={handleLogin}
+        className='animate__animated animate__fadeIn animate__faster'
+      >
         <input
           type='text'
           placeholder='Email'
@@ -39,6 +42,7 @@ export const LoginScreen = () => {
           value={email}
           onChange={handleInputChange}
         />
+
         <input
           type='password'
           placeholder='Password'
@@ -47,16 +51,18 @@ export const LoginScreen = () => {
           value={password}
           onChange={handleInputChange}
         />
+
         <button
           type='submit'
           className='btn btn-primary btn-block'
           disabled={loading}
         >
-          {loading ? 'Loading' : 'Login'}
+          Login
         </button>
 
         <div className='auth__social-networks'>
           <p>Login with social networks</p>
+
           <div className='google-btn' onClick={handleGoogleLogin}>
             <div className='google-icon-wrapper'>
               <img
@@ -70,6 +76,7 @@ export const LoginScreen = () => {
             </p>
           </div>
         </div>
+
         <Link to='/auth/register' className='link'>
           Create new account
         </Link>

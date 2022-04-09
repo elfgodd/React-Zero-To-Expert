@@ -786,3 +786,7 @@ file (change text to file) | search the to upload
 upload_preset              | react-journal
 
 ```
+
+### 4. Animaciones en nuestra aplicación
+
+https://animate.style/
