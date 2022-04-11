@@ -1,6 +1,8 @@
 # React: De cero a experto ( Hooks y MERN )
 
-## Section 01:
+## Section 01
+
+## Section 02
 
 ¿Qué aprenderemos en esta sección?
 
@@ -16,7 +18,7 @@ Daremos nuestros primeros pasos y una pequeña aplicación que nos ayudará a pe
 
 ## Folder 01: introduccion a react
 
-## Section 02:
+## Section 03:
 
 ¿Qué aprenderemos en esta sección?
 
@@ -97,7 +99,7 @@ Pero recuerden que esto es para entrar en calor y que lo temas principales de Ja
 
 https://developer.mozilla.org/es/
 
-## Section 03:
+## Section 04:
 
 ¿Qué veremos en esta sección?
 
@@ -167,7 +169,7 @@ https://es.reactjs.org/docs/events.html
 
 https://es.reactjs.org/docs/hooks-intro.html
 
-## Section 04: Pruebas unitarias y de integracion
+## Section 05: Pruebas unitarias y de integracion
 
 ¿Qué veremos en esta sección?
 
@@ -227,7 +229,7 @@ https://www.npmjs.com/package/enzyme-to-json
   - debe de mostrar el valor por defecto de 100
   - usar el wrapper.find, tomando el elemento html donde se muestra el valor del contador
 
-## Section 05:
+## Section 06:
 
 ¿Qué veremos en esta sección?
 
@@ -265,7 +267,7 @@ https://developers.giphy.com/docs/api/endpoint/#search
 
 https://animate.style/
 
-## Section 06:
+## Section 07:
 
 ¿Qué veremos en esta sección?
 
@@ -296,7 +298,7 @@ Para correr el servidor despues del build, debemos estar dentro de la carpeta bu
 y correr el siguiente comando
 `http-server -o`
 
-## Section 07: Testing - Probando la aplicacion de GifExpert
+## Section 08: Testing - Probando la aplicacion de GifExpert
 
 ¿Qué veremos en esta sección?
 
@@ -328,7 +330,7 @@ https://github.com/wojtekmaj/enzyme-adapter-react-17
 Pruebas sobre customHooks:  
 https://react-hooks-testing-library.com/
 
-## Section 08: Profundizacion Hooks - Generales
+## Section 09: Profundizacion Hooks - Generales
 
 ¿Qué veremos en esta sección?
 
@@ -373,7 +375,7 @@ y solo se va disparadas si las props cambian
 
 1 Mandamos una funcion a un componente hijo
 
-## Section 09: Profundizacion Hooks - useReducer
+## Section 10: Profundizacion Hooks - useReducer
 
 ¿Qué veremos en esta sección?
 
@@ -408,7 +410,7 @@ El método filter() crea un nuevo array con todos los elementos que cumplan la c
 
 https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
-## Section 10: Profundizacion Hooks - useContext
+## Section 11: Profundizacion Hooks - useContext
 
 ¿Qué veremos en esta sección?
 
@@ -432,7 +434,7 @@ El objetivo de la sección es principalmente aprender sobre el Context, el Route
 
 https://v5.reactrouter.com/web/guides/quick-start
 
-## Section 11: Pruebas unitarias y de integracion - Hooks:
+## Section 12: Pruebas unitarias y de integracion - Hooks:
 
 ¿Qué veremos en esta sección?
 
@@ -455,7 +457,7 @@ How to use waitForNextUpdate function in testing library react-hooks:
 
 https://reqres.in/api/users?page=2RealExampleRef
 
-## Section 12: Bonus:
+## Section 13: Bonus:
 
 ¿Qué veremos en esta sección?
 
@@ -469,7 +471,7 @@ No es una sección obligatoria, pero puede ayudarles a tener su código ordenado
 
 ## Folder 06: Custom Hooks
 
-## Section 13: HeroesApp - Single Page Application (SPA)
+## Section 14
 
 ¿Qué veremos en esta sección?
 
@@ -517,7 +519,7 @@ className="animate__animated animate__fadeInLeft"
 Parse and stringify URL query strings
 https://www.npmjs.com/package/query-string
 
-## Section 14: Proteccion de rutas
+## Section 15: Proteccion de rutas
 
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
@@ -536,7 +538,7 @@ Reducer
 
 Esta es una sección pequeña pero importante para trabajar las bases de la autenticación y protección de nuestra aplicación.
 
-## Section 15: Pruebas de nuestra aplicacion de Heroes
+## Section 16: Pruebas de nuestra aplicacion de Heroes
 
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
@@ -563,11 +565,11 @@ https://www.npmjs.com/package/@wojtekmaj/enzyme-adapter-react-17
 
 https://www.npmjs.com/package/enzyme-to-json
 
-## Section 16: Bonus: Formas de trabajar con imagenes
+## Section 17: Bonus: Formas de trabajar con imagenes
 
 https://webpack.js.org/guides/dependency-management/#requirecontext
 
-## Section 17: JournalApp - SASS - Estructura y Diseño
+## Section 187: JournalApp - SASS - Estructura y Diseño
 
 ## Folder 08: Journal App
 
@@ -594,7 +596,7 @@ https://v5.reactrouter.com/web/guides/quick-start
 
 https://sass-lang.com/documentation
 
-## Section 18: Redux - Que es y conceptos?
+## Section 19: Redux - Que es y conceptos?
 
 ¿Qué veremos en esta sección?
 
@@ -614,7 +616,7 @@ Acciones asíncronas
 
 Es una sección sumamente pequeña, pero quiero darles una explicación teórica sobre Redux antes de entrar en él, pero la ventaja es que para estas alturas, ya deberíamos de saber sobre el Reducer, el cual es el corazón del Redux, por consecuencia aprender Redux en este instante debería ser más fácil!
 
-## Section 19: Introduccion a Redux y autenticacion en Firebase
+## Section 20: Introduccion a Redux y autenticacion en Firebase
 
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
@@ -700,7 +702,7 @@ https://www.npmjs.com/package/validator
 https://sweetalert2.github.io/
 `npm install sweetalert2`
 
-## Section 20: JournalApp - Redux - CRUD en Firestore y subida de archivos
+## Section 21: JournalApp - Redux - CRUD en Firestore y subida de archivos
 
 Temas puntuales de la sección
 
@@ -790,3 +792,30 @@ upload_preset              | react-journal
 ### 4. Animaciones en nuestra aplicación
 
 https://animate.style/
+
+## Section 22: Pruebas con Redux, Firebase, Firestore y autenticacion
+
+Temas puntuales de la sección
+
+¿Qué veremos en esta sección?
+
+    Profundizando en pruebas
+
+    Pruebas en Firebase y Firestore
+
+    Pruebas con reducers
+
+    Variables de entorno de desarrollo, test y producción
+
+    Pruebas en tareas asíncronas
+
+Esta sección continúa el tema de las pruebas unitarias y de integración con el objetivo de seguir cubriendo temas nuevos. Las pruebas conforme se van avanzando, efectivamente se van haciendo más complejas pero la idea es darles a ustedes las herramientas para que puedan probar cualquier cosa que ustedes necesiten.
+
+### 1. Continuación del proyecto - JournalApp - Testing
+
+Enzyme: https://enzymejs.github.io/enzyme/
+
+wojtekmaj/enzyme-adapter-react-17:
+https://github.com/wojtekmaj/enzyme-adapter-react-17
+
+enzyme-to-json: https://www.npmjs.com/package/enzyme-to-json
