@@ -1,3 +1,7 @@
+/**
+ * @jest-environment node
+ */
+
 import configureStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 
@@ -29,7 +33,7 @@ const initState = {
   },
   notes: {
     active: {
-      id: '02L6n2ZPdEgpELw8y7ML',
+      id: '1WTANno0TLKxcollxf7q',
       title: 'Hola',
       body: 'Mundo',
     },
@@ -110,5 +114,15 @@ describe('Pruebas con las acciones de notes', () => {
     const docRef = await db.doc(`/TESTING/journal/notes/${note.id}`).get()
 
     expect(docRef.data().title).toBe(note.title)
+  })
+
+  test('startUploading debe de actualizar el url del entry', async () => {
+    const file = new File([], 'foto.jpg')
+    await store.dispatch(startUploading(file))
+
+    const docRef = await db
+      .doc('/TESTING/journal/notes/1WTANno0TLKxcollxf7q')
+      .get()
+    expect(docRef.data().url).toBe('https://hola-mundo.com/cosa.jpg')
   })
 })
