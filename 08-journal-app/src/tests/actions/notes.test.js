@@ -5,6 +5,8 @@
 import configureStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 
+import '@testing-library/jest-dom'
+
 import {
   startNewNote,
   startLoadingNotes,
