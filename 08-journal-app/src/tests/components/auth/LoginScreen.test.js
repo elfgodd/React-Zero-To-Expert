@@ -68,9 +68,6 @@ describe('Pruebas en <LoginScreen />', () => {
     // )
 
     // Deberia de ser asi sin valores ya que el input esta en blanco
-     expect(startLoginEmailPassword).toHaveBeenLastCalledWith(
-       '',
-       ''
-     )
+    expect(startLoginEmailPassword).toHaveBeenLastCalledWith('', '')
   })
 })
