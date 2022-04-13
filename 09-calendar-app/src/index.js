@@ -1,11 +1,7 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import ReactDOM from 'react-dom'
 import CalendarApp from './CalendarApp'
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
-  <BrowserRouter>
-    <CalendarApp />
-  </BrowserRouter>
-)
+import './styles.css'
+
+ReactDOM.render(<CalendarApp />, document.getElementById('root'))
