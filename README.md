@@ -8,15 +8,15 @@
 
 ¿Qué aprenderemos en esta sección?
 
-¿Qué es React?
+- ¿Qué es React?
 
-Conceptos generales
+- Conceptos generales
 
-Babel
+- Babel
 
-JSX
+- JSX
 
-Daremos nuestros primeros pasos y una pequeña aplicación que nos ayudará a perderle el miedo a React rápidamente
+- Daremos nuestros primeros pasos y una pequeña aplicación que nos ayudará a perderle el miedo a React rápidamente
 
 ## Section 03: Introduccion a JavaScript moderno
 
@@ -24,25 +24,25 @@ Daremos nuestros primeros pasos y una pequeña aplicación que nos ayudará a pe
 
 ¿Qué aprenderemos en esta sección?
 
-Generar la base sobre JavaScript
+- Generar la base sobre JavaScript
 
-Constantes y variables Let
+- Constantes y variables Let
 
-Template String
+- Template String
 
-Objetos literales
+- Objetos literales
 
-Arreglos
+- Arreglos
 
-Desestructruación \* (sumamente importante)
+- Desestructruación \* (sumamente importante)
 
-Promesas
+- Promesas
 
-Fetch API
+- Fetch API
 
-Ternarios
+- Ternarios
 
-Async - Await
+- Async - Await
 
 Mi objetivo aquí es que tengamos las bases que nos ayuden a que podamos diferenciar fácilmente qué es propio de React y qué es propio de JavaScript. Estos conceptos y ejercicios nos ayudarán a suavizar la curva de aprendizaje de React.
 
@@ -105,23 +105,23 @@ https://developer.mozilla.org/es/
 
 ¿Qué veremos en esta sección?
 
-Nuestra primera aplicación - Hola Mundo
+- Nuestra primera aplicación - Hola Mundo
 
-Exposiciones sobre los componentes
+- Exposiciones sobre los componentes
 
-Creación de componentes (Functional Components)
+- Creación de componentes (Functional Components)
 
-Propiedades - Props
+- Propiedades - Props
 
-Impresiones en el HTML
+- Impresiones en el HTML
 
-PropTypes
+- PropTypes
 
-DefaultProps
+- DefaultProps
 
-Introducción general a los Hooks
+- Introducción general a los Hooks
 
-useState
+- useState
 
 Es una sección importante, especialmente para todos los que están empezando de cero en React, ya que dará las bases de cómo segmentar la lógica de nuestra aplicación en pequeñas piezas más fáciles de mantener.
 
@@ -177,31 +177,31 @@ https://es.reactjs.org/docs/hooks-intro.html
 
 ¿Qué veremos en esta sección?
 
-Introducción a las pruebas
+- Introducción a las pruebas
 
-AAA
+- AAA
 
-Arrange - Arreglar
+- Arrange - Arreglar
 
-Act - Actuar
+- Act - Actuar
 
-Assert - Afirmar
+- Assert - Afirmar
 
-Primeras pruebas
+- Primeras pruebas
 
-Jest
+- Jest
 
-Expect
+- Expect
 
-toBe
+- toBe
 
-Enzyme
+- Enzyme
 
-Comandos útiles en la terminal para pruebas
+- Comandos útiles en la terminal para pruebas
 
-Revisar elementos renderizados en el componente
+- Revisar elementos renderizados en el componente
 
-Simular eventos
+- Simular eventos
 
 Esta sección de pruebas es sumamente importante porque nos dará la base de las pruebas que estaremos haciendo durante el curso, las pruebas irán creciendo en complejidad, por lo que les recomiendo que nos aseguremos de comprender bien todos estos conceptos para que nos sea más fácil las siguientes secciones de pruebas.
 
@@ -211,7 +211,8 @@ Probando las secciones anteriores
 
 https://jestjs.io/
 
-Error in Jest: https://github.com/jest-community/eslint-plugin-jest/blob/v25.7.0/docs/rules/no-conditional-expect.md
+Error in Jest:  
+https://github.com/jest-community/eslint-plugin-jest/blob/v25.7.0/docs/rules/no-conditional-expect.md
 
 https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
 
@@ -239,23 +240,23 @@ https://www.npmjs.com/package/enzyme-to-json
 
 ¿Qué veremos en esta sección?
 
-Custom Hooks
+- Custom Hooks
 
-Fetch hacia un API
+- Fetch hacia un API
 
-Comunicación entre componentes
+- Comunicación entre componentes
 
-Clases de CSS
+- Clases de CSS
 
-Animaciones
+- Animaciones
 
-Enviar métodos como argumentos
+- Enviar métodos como argumentos
 
-Crear listados
+- Crear listados
 
-keys
+- keys
 
-Giphy
+- Giphy
 
 Esta es una aplicación pequeña pero muy ilustrativa que explica cómo utilizar React + customHooks para poder resolver necesidades en específico que podremos re-utilizar después.
 
@@ -277,21 +278,21 @@ https://animate.style/
 
 ¿Qué veremos en esta sección?
 
-Aprender cómo realizar backups a repositorios de Git
+- Aprender cómo realizar backups a repositorios de Git
 
-Subir nuestro repositorio a GitHub
+- Subir nuestro repositorio a GitHub
 
-Uso de Github Pages
+- Uso de Github Pages
 
-Desplegar nuestra aplicación de React
+- Desplegar nuestra aplicación de React
 
-Generar build de producción de nuestra aplicación
+- Generar build de producción de nuestra aplicación
 
 Aunque es una sección pequeña, les puede servir para desplegar infinidad de proyectos de React de forma gratuita, sin contar que tendrán respaldos de sus proyectos por si llegan a perder su trabajo que tenían localmente en su computadora.
 
 ### 1. Preparacion del proyecto - GitHub Pages
 
-http-server: a simple static HTTP server:
+http-server: a simple static HTTP server:  
 https://www.npmjs.com/package/http-server
 
 https://docs.github.com/en/enterprise/2.13/user/articles/setting-your-username-in-git
@@ -300,29 +301,29 @@ https://docs.github.com/en/enterprise/2.13/user/articles/setting-your-username-i
 
 `npm install --global http-server`
 
-Para correr el servidor despues del build, debemos estar dentro de la carpeta build
-y correr el siguiente comando
+Para correr el servidor despues del build, debemos estar dentro de la carpeta build y correr el siguiente comando
+
 `http-server -o`
 
 ## Section 08: Testing - Probando la aplicacion de GifExpert
 
 ¿Qué veremos en esta sección?
 
-Seguir el camino de las pruebas
+- Seguir el camino de las pruebas
 
-Pruebas en componentes específicos
+- Pruebas en componentes específicos
 
-Pruebas en componentes de forma individual
+- Pruebas en componentes de forma individual
 
-Pruebas con customHooks
+- Pruebas con customHooks
 
-Esperar cambios en un customHook
+- Esperar cambios en un customHook
 
-Simular eventos en inputs y formularios
+- Simular eventos en inputs y formularios
 
-Simular llamadas a funciones
+- Simular llamadas a funciones
 
-Evaluar si existen elementos en el componente
+- Evaluar si existen elementos en el componente
 
 En esta sección seguiremos expandiendo todo lo que habíamos visto anteriormente en otras secciones de pruebas, pero ahora veremos más a detalle los temas y adicionalmente introduciremos nuevos conceptos y nuevos tipos de pruebas.
 
@@ -344,27 +345,27 @@ https://react-hooks-testing-library.com/
 
 ¿Qué veremos en esta sección?
 
-Profundizar en el tema de los Hooks
+- Profundizar en el tema de los Hooks
 
-Crear otros customHooks
+- Crear otros customHooks
 
-useState
+- useState
 
-useCounter - Personalizado
+- useCounter - Personalizado
 
-useEffect y sus precauciones
+- useEffect y sus precauciones
 
-useRef
+- useRef
 
-useFetch - Personalizado + optimizaciones
+- useFetch - Personalizado + optimizaciones
 
-useLayoutEffect
+- useLayoutEffect
 
-Memo
+- Memo
 
-useMemo
+- useMemo
 
-useCallback
+- useCallback
 
 Estos son los Hooks relativamente simples, aún hay mas que explicaremos más adelante, pero en esta sección nos enfocaremos en estos trabajos y para qué nos pueden servir.
 
@@ -387,15 +388,15 @@ y solo se va disparadas si las props cambian
 
 ¿Qué veremos en esta sección?
 
-useReducer
+- useReducer
 
-Reducers
+- Reducers
 
-Teoría de un reducer
+- Teoría de un reducer
 
-Aplicación de TODOs
+- Aplicación de TODOs
 
-CRUD local
+- CRUD local
 
 Esta es una sección dedicada a comprender el concepto de un Reducer, el cual es sumamente importante para poder entrar a Redux o bien usar el contextAPI fácilmente.
 
@@ -422,19 +423,19 @@ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Ar
 
 ¿Qué veremos en esta sección?
 
-Context
+- Context
 
-Provider
+- Provider
 
-useContext
+- useContext
 
-React Router
+- React Router
 
-Links y NavLinks
+- Links y NavLinks
 
-CreateContext
+- CreateContext
 
-SPA ( Single Page Application )
+- SPA ( Single Page Application )
 
 El objetivo de la sección es principalmente aprender sobre el Context, el Router es un valor agregado que explotaremos mucho más en próximas secciones, pero al usar un Router, podemos explicar claramente el problema y necesidad del context.
 
@@ -446,7 +447,7 @@ https://v5.reactrouter.com/web/guides/quick-start
 
 ¿Qué veremos en esta sección?
 
-Pruebas sobre Hooks y CustomHooks
+- Pruebas sobre Hooks y CustomHooks
 
 Ese es el tema principal, demostrar cómo podemos evaluar cada unos de los hooks aplicados anteriormente con sus casos reales de uso.
 
@@ -471,11 +472,11 @@ https://reqres.in/api/users?page=2RealExampleRef
 
 ¿Qué veremos en esta sección?
 
-Subir código a nuestro repositorio
+- Subir código a nuestro repositorio
 
-Tener un listado de customHooks y código que podemos reutilizar
+- Tener un listado de customHooks y código que podemos reutilizar
 
-Una idea para mantener tu repositorio ordenado con ejemplos
+- Una idea para mantener tu repositorio ordenado con ejemplos
 
 No es una sección obligatoria, pero puede ayudarles a tener su código ordenado y fácil de utilizar en proyectos futuros.
 
@@ -485,19 +486,19 @@ No es una sección obligatoria, pero puede ayudarles a tener su código ordenado
 
 ¿Qué veremos en esta sección?
 
-SPA ( Single Page Application ) a profundidad
+- SPA ( Single Page Application ) a profundidad
 
-Diferentes temas en la misma aplicación aplicados a diferentes rutas
+- Diferentes temas en la misma aplicación aplicados a diferentes rutas
 
-Multiples Routers
+- Multiples Routers
 
-Push y Replace en el History
+- Push y Replace en el History
 
-Leer argumentos por URL
+- Leer argumentos por URL
 
-QueryParams
+- QueryParams
 
-Aplicar filtros utilizando QueryStrings
+- Aplicar filtros utilizando QueryStrings
 
 En esta sección aún no haremos protección de rutas, pero dejaremos el estilo de esos componentes listos para la siguiente sección.
 
@@ -511,9 +512,11 @@ https://v5.reactrouter.com/web/guides/quick-start
 
 https://gist.github.com/Klerith/566b484ac6fe46c8fa949e61df671a18
 
+```
 className={({ isActive }) =>
 'nav-item nav-link' + (isActive && 'active')
 }
+```
 
 https://animate.style/ :
 
@@ -524,25 +527,26 @@ className="animate__animated animate__fadeInLeft"
 
 ### 1. query-string:
 
-Parse and stringify URL query strings
+Parse and stringify URL query strings:  
 https://www.npmjs.com/package/query-string
 
 ## Section 15: Proteccion de rutas
 
 Temas puntuales de la sección
-¿Qué veremos en esta sección?
 
-Rutas públicas
+- ¿Qué veremos en esta sección?
 
-Rutas privadas
+- Rutas públicas
 
-Login y logout - Sin backend aún
+- Rutas privadas
 
-Recordar cuál fue la última ruta visitada para mejorar la experiencia de usuario.
+- Login y logout - Sin backend aún
 
-Context
+- Recordar cuál fue la última ruta visitada para mejorar la experiencia de usuario.
 
-Reducer
+- Context
+
+- Reducer
 
 Esta es una sección pequeña pero importante para trabajar las bases de la autenticación y protección de nuestra aplicación.
 
@@ -551,19 +555,19 @@ Esta es una sección pequeña pero importante para trabajar las bases de la aute
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
 
-Nuevos tipos de pruebas
+- Nuevos tipos de pruebas
 
-Pruebas en rutas privadas y públicas
+- Pruebas en rutas privadas y públicas
 
-MemoryRouter
+- MemoryRouter
 
-Pruebas en nuestro DashboardRouter
+- Pruebas en nuestro DashboardRouter
 
-Pruebas en el AppRouter
+- Pruebas en el AppRouter
 
-Simular URLs y segmentos
+- Simular URLs y segmentos
 
-Simular queryParams y queryStrings
+- Simular queryParams y queryStrings
 
 Recuerden que el objetivo de las pruebas, es ir probando cosas nuevas cada vez y tener un repertorio completo de diferentes casos.
 
@@ -584,15 +588,15 @@ https://webpack.js.org/guides/dependency-management/#requirecontext
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
 
-SASS
+- SASS
 
-Diseño completo de la aplicación de forma manual
+- Diseño completo de la aplicación de forma manual
 
-Uso de funciones de SASS
+- Uso de funciones de SASS
 
-Configuración y uso de parciales
+- Configuración y uso de parciales
 
-Transiciones en SASS
+- Transiciones en SASS
 
 Esta sección está totalmente enfocada en aprender a utilizar SASS para crear nuestro estilo de la aplicación, la cual haremos todo nosotros de absoluto cero.
 
@@ -608,19 +612,19 @@ https://sass-lang.com/documentation
 
 ¿Qué veremos en esta sección?
 
-Redux
+- Redux
 
-Store
+- Store
 
-Middlewares
+- Middlewares
 
-Dispatch
+- Dispatch
 
-Actions
+- Actions
 
-State
+- State
 
-Acciones asíncronas
+- Acciones asíncronas
 
 Es una sección sumamente pequeña, pero quiero darles una explicación teórica sobre Redux antes de entrar en él, pero la ventaja es que para estas alturas, ya deberíamos de saber sobre el Reducer, el cual es el corazón del Redux, por consecuencia aprender Redux en este instante debería ser más fácil!
 
@@ -629,23 +633,23 @@ Es una sección sumamente pequeña, pero quiero darles una explicación teórica
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
 
-Redux aplicado en nuestro proyecto
+- Redux aplicado en nuestro proyecto
 
-Firebase
+- Firebase
 
-FireStore
+- FireStore
 
-Redux Devtools
+- Redux Devtools
 
-Thunk
+- Thunk
 
-Formularios
+- Formularios
 
-Google SingIn
+- Google SingIn
 
-Acciones Asíncronas
+- Acciones Asíncronas
 
-Mantener el estado de la autenticación
+- Mantener el estado de la autenticación
 
 En esta sección configuraremos Redux en nuestro proyecto por primera vez, aplicado al inicio en la parte de la autenticación y mantener el estado de la misma a lo largo de toda la aplicación.
 
@@ -676,14 +680,14 @@ https://firebase.google.com/
 4. Agregar el Auth de google, Agregar otro proveedor
 5. Activar el boton y agregar el correo que queremos para soporte
 
-// Instalar Firebase
+// Instalar Firebase  
 `npm install firebase@8.10.0`
 
 ### 3. Thunk Middleware - Acciones asíncronas
 
 https://www.npmjs.com/package/redux-thunk
 
-// Firebase para SQL Developers Youtube Playlist
+// Firebase para SQL Developers Youtube Playlist  
 https://www.youtube.com/playlist?list=PLCKuOXG0bPi29EkcAuVCln9ISbExcQk66
 
 ### 4. Configurar Firebase y Google Sign-in
@@ -707,7 +711,7 @@ https://www.npmjs.com/package/validator
 
 ### 6. Mensajes de error
 
-https://sweetalert2.github.io/
+https://sweetalert2.github.io/  
 `npm install sweetalert2`
 
 ## Section 21: JournalApp - Redux - CRUD en Firestore y subida de archivos
@@ -716,15 +720,15 @@ Temas puntuales de la sección
 
 ¿Qué veremos en esta sección?
 
-    CRUD hacia Firestore
+- CRUD hacia Firestore
 
-    Expandiendo nuestro estore añadiendo otros reducers
+- Expandiendo nuestro estore añadiendo otros reducers
 
-    Seleccionar y subir archivos
+- Seleccionar y subir archivos
 
-    Animaciones adicionales a nuestra aplicación
+- Animaciones adicionales a nuestra aplicación
 
-    Limpieza en el logout
+- Limpieza en el logout
 
 Esta sección está enfocada ahora en las entradas de nuestro diario, asegurándose de que grabe únicamente en el documento del usuario autenticado.
 
@@ -737,8 +741,8 @@ Esta sección está enfocada ahora en las entradas de nuestro diario, aseguránd
 
 Collection, una collecion como una serie de datos, una lista, un arreglo
 
-// Reglas de la base de datos para no tener errores de permiso
-// Uncaught (in promise) FirebaseError: Missing or insufficient permissions.
+// Reglas de la base de datos para no tener errores de permiso  
+// Uncaught (in promise) FirebaseError: Missing or insufficient permissions
 
 ```
 rules_version = '2';
@@ -807,15 +811,15 @@ Temas puntuales de la sección
 
 ¿Qué veremos en esta sección?
 
-    Profundizando en pruebas
+- Profundizando en pruebas
 
-    Pruebas en Firebase y Firestore
+- Pruebas en Firebase y Firestore
 
-    Pruebas con reducers
+- Pruebas con reducers
 
-    Variables de entorno de desarrollo, test y producción
+- Variables de entorno de desarrollo, test y producción
 
-    Pruebas en tareas asíncronas
+- Pruebas en tareas asíncronas
 
 Esta sección continúa el tema de las pruebas unitarias y de integración con el objetivo de seguir cubriendo temas nuevos. Las pruebas conforme se van avanzando, efectivamente se van haciendo más complejas pero la idea es darles a ustedes las herramientas para que puedan probar cualquier cosa que ustedes necesiten.
 
@@ -823,16 +827,17 @@ Esta sección continúa el tema de las pruebas unitarias y de integración con e
 
 Enzyme: https://enzymejs.github.io/enzyme/
 
-wojtekmaj/enzyme-adapter-react-17:
+wojtekmaj/enzyme-adapter-react-17:  
 https://github.com/wojtekmaj/enzyme-adapter-react-17
 
-enzyme-to-json: https://www.npmjs.com/package/enzyme-to-json
+enzyme-to-json:  
+https://www.npmjs.com/package/enzyme-to-json
 
 ### 2. Cloudinary SDK - Delete image
 
 https://cloudinary.com/documentation/admin_api#delete_resources
 
-Upload API example - delete a single asset
+Upload API example - delete a single asset  
 https://cloudinary.com/documentation/node_asset_administration#upload_api_example_delete_a_single_asset
 
 ### 3. Pruebas de acciones asíncronas - startNewNote
@@ -876,21 +881,21 @@ Temas puntuales de la sección
 
 ¿Qué veremos en esta sección?
 
-    Estructura y diseño de nuestra aplicación de Calendario
+- Estructura y diseño de nuestra aplicación de Calendario
 
-    Uso de componentes de terceros
+- Uso de componentes de terceros
 
-    Modals
+- Modals
 
-    Configuración de Redux
+- Configuración de Redux
 
-    CRUD local
+- CRUD local
 
-    Preparación de pantallas para futuras secciones
+- Preparación de pantallas para futuras secciones
 
-    Uso de MomentJS
+- Uso de MomentJS
 
-    Manejo de fechas
+- Manejo de fechas
 
 Esta sección es el inicio de nuestro MERN, (Mongo Express React Node), luego crearemos nuestro backend y después regresaremos a esta app para conectarla y desplegarla en producción
 
@@ -919,3 +924,58 @@ https://www.npmjs.com/package/react-datetime-picker
 https://www.npmjs.com/package/redux-thunk
 https://es.redux.js.org/
 https://react-redux.js.org/
+
+## Section 23: CalendarApp - Backend - Node, Express, Mongo
+
+## Folder 10: calendar-backend
+
+Temas puntuales de la sección
+
+¿Qué veremos en esta sección?
+
+- Node
+
+- Express
+
+- Mongoose
+
+- Modelos
+
+- Controllers
+
+- Middlewares de Express
+
+- JWT
+
+- Autenticación pasiva
+
+- Payloas
+
+- Encriptación
+
+- Rutas
+
+- CORS
+
+- Revalidar tokens
+
+- MongoDB
+
+- MongoAtlas
+
+- MongoCompass
+
+Es una sección bastante pesada en el aspecto de que no es React lo que veremos, pero todo lo haremos con JavaScript, y ya debemos de estar familiarizados con él.
+
+El backend que haremos aquí es robusto y lo podrían utilizar en proyectos reales, espero que lo aprovechen y sobre todo aprendan bastante.
+
+Si quieren saber más sobre Node, recuerden que tengo un curso especializado en ese tema.
+
+### 1. Inicio de proyecto - CalendarApp Node Backend
+
+```
+mkdir dir calendar-backend
+cd calendar-backend
+npm init -y
+npm i nodemon -g
+```
