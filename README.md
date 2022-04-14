@@ -1,8 +1,10 @@
 # React: De cero a experto ( Hooks y MERN )
 
-## Section 01
+## Section 01 Introduccion
 
-## Section 02
+## Section 02 Introduccion a React y conceptos generales
+
+## Folder 01: intro-react
 
 ¿Qué aprenderemos en esta sección?
 
@@ -16,9 +18,9 @@ JSX
 
 Daremos nuestros primeros pasos y una pequeña aplicación que nos ayudará a perderle el miedo a React rápidamente
 
-## Folder 01: introduccion a react
+## Section 03: Introduccion a JavaScript moderno
 
-## Section 03:
+## Folder 02: intro-javascript
 
 ¿Qué aprenderemos en esta sección?
 
@@ -44,7 +46,7 @@ Async - Await
 
 Mi objetivo aquí es que tengamos las bases que nos ayuden a que podamos diferenciar fácilmente qué es propio de React y qué es propio de JavaScript. Estos conceptos y ejercicios nos ayudarán a suavizar la curva de aprendizaje de React.
 
-## Folder: introduccion a javascript moderno
+### 1. Bases de JavaScript
 
 1. Const & Let:
 
@@ -99,7 +101,7 @@ Pero recuerden que esto es para entrar en calor y que lo temas principales de Ja
 
 https://developer.mozilla.org/es/
 
-## Section 04:
+## Section 04: Primeros pasos en React
 
 ¿Qué veremos en esta sección?
 
@@ -123,8 +125,6 @@ useState
 
 Es una sección importante, especialmente para todos los que están empezando de cero en React, ya que dará las bases de cómo segmentar la lógica de nuestra aplicación en pequeñas piezas más fáciles de mantener.
 
-## Folder 03: Primeros pasos en React
-
 ### 1. Primera aplicación de React:
 
 https://create-react-app.dev/
@@ -138,6 +138,8 @@ https://developers.google.com/web/ilt/pwa
 https://create-react-app.dev/docs/available-scripts/
 
 ### 3. Reto: Tarea
+
+## Folder 03: counter-app
 
 - Crear un nuevo componente dentro de la carpeta SRC llamado
   `CounterApp`
@@ -170,6 +172,8 @@ https://es.reactjs.org/docs/events.html
 https://es.reactjs.org/docs/hooks-intro.html
 
 ## Section 05: Pruebas unitarias y de integracion
+
+**Probando las secciones anteriores**
 
 ¿Qué veremos en esta sección?
 
@@ -229,7 +233,9 @@ https://www.npmjs.com/package/enzyme-to-json
   - debe de mostrar el valor por defecto de 100
   - usar el wrapper.find, tomando el elemento html donde se muestra el valor del contador
 
-## Section 06:
+## Section 06: GifExpertApp - Aplicacion
+
+## Folder 04: gif-expert-app
 
 ¿Qué veremos en esta sección?
 
@@ -253,21 +259,21 @@ Giphy
 
 Esta es una aplicación pequeña pero muy ilustrativa que explica cómo utilizar React + customHooks para poder resolver necesidades en específico que podremos re-utilizar después.
 
-## Folder 04: Gif Expert Aplicacion
+### 1. Inicio del proyecto GifExpertApp
 
 https://es.reactjs.org/docs/faq-structure.html
 
 https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
 
-### 1. Fetch API - Obtener las imágenes deseadas:
+### 2. Fetch API - Obtener las imágenes deseadas:
 
 https://developers.giphy.com/docs/api/endpoint/#search
 
-### 2. Animaciones por CSS en nuestra aplicación
+### 3. Animaciones por CSS en nuestra aplicación
 
 https://animate.style/
 
-## Section 07:
+## Section 07: Generando el build de produccion y despliegues en GitHub Pages
 
 ¿Qué veremos en esta sección?
 
@@ -283,7 +289,7 @@ Generar build de producción de nuestra aplicación
 
 Aunque es una sección pequeña, les puede servir para desplegar infinidad de proyectos de React de forma gratuita, sin contar que tendrán respaldos de sus proyectos por si llegan a perder su trabajo que tenían localmente en su computadora.
 
-## Generando el build de produccion y despliegues en GitHub Pages
+### 1. Preparacion del proyecto - GitHub Pages
 
 http-server: a simple static HTTP server:
 https://www.npmjs.com/package/http-server
@@ -320,6 +326,8 @@ Evaluar si existen elementos en el componente
 
 En esta sección seguiremos expandiendo todo lo que habíamos visto anteriormente en otras secciones de pruebas, pero ahora veremos más a detalle los temas y adicionalmente introduciremos nuevos conceptos y nuevos tipos de pruebas.
 
+### 1. Configurar el ambiente de pruebas
+
 https://enzymejs.github.io/enzyme/
 
 enzyme-to-json:  
@@ -331,6 +339,8 @@ Pruebas sobre customHooks:
 https://react-hooks-testing-library.com/
 
 ## Section 09: Profundizacion Hooks - Generales
+
+## Folder 05: hook-app
 
 ¿Qué veremos en esta sección?
 
@@ -359,8 +369,6 @@ useCallback
 Estos son los Hooks relativamente simples, aún hay mas que explicaremos más adelante, pero en esta sección nos enfocaremos en estos trabajos y para qué nos pueden servir.
 
 Adicionalmente estaremos dejando las bases para lo que será una sección de pruebas sumamente interesante después.
-
-## Folder 05: Hook App
 
 ### 1. useLayoutEffect:
 
@@ -457,7 +465,9 @@ How to use waitForNextUpdate function in testing library react-hooks:
 
 https://reqres.in/api/users?page=2RealExampleRef
 
-## Section 13: Bonus:
+## Section 13: Bonus = Repositorio de Custom Hooks
+
+## Folder 06: custom-hooks
 
 ¿Qué veremos en esta sección?
 
@@ -469,9 +479,9 @@ Una idea para mantener tu repositorio ordenado con ejemplos
 
 No es una sección obligatoria, pero puede ayudarles a tener su código ordenado y fácil de utilizar en proyectos futuros.
 
-## Folder 06: Custom Hooks
+## Section 14: HeroesApp - Single Page Application (SPA)
 
-## Section 14
+## Folder 07: heroes-app
 
 ¿Qué veremos en esta sección?
 
@@ -493,9 +503,7 @@ En esta sección aún no haremos protección de rutas, pero dejaremos el estilo 
 
 Aquí quiero enfocarme en la funcionalidad de la aplicación suponiendo que estamos autenticados.
 
-## Folder 07: Heroes App
-
-HeroesApp, Single Page Application, SPA
+### 1. Inicio del proyecto - HeroesApp
 
 https://reactrouter.com/
 
@@ -569,9 +577,9 @@ https://www.npmjs.com/package/enzyme-to-json
 
 https://webpack.js.org/guides/dependency-management/#requirecontext
 
-## Section 187: JournalApp - SASS - Estructura y Diseño
+## Section 18: JournalApp - SASS - Estructura y Diseño
 
-## Folder 08: Journal App
+## Folder 08: journal-app
 
 Temas puntuales de la sección
 ¿Qué veremos en esta sección?
@@ -819,3 +827,95 @@ wojtekmaj/enzyme-adapter-react-17:
 https://github.com/wojtekmaj/enzyme-adapter-react-17
 
 enzyme-to-json: https://www.npmjs.com/package/enzyme-to-json
+
+### 2. Cloudinary SDK - Delete image
+
+https://cloudinary.com/documentation/admin_api#delete_resources
+
+Upload API example - delete a single asset
+https://cloudinary.com/documentation/node_asset_administration#upload_api_example_delete_a_single_asset
+
+### 3. Pruebas de acciones asíncronas - startNewNote
+
+https://www.npmjs.com/package/redux-mock-store
+
+### 4. Crear base de datos de desarrollo
+
+Ya lo hemos hecho muchas veces, repetir los pasos anteriormente hechos
+Ir a la consola de firebase, create un proyecto, darle un nombre, no
+activar el analytics, ir a Database, Create database,
+
+Firestore RUles TAB:
+
+```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write;
+    }
+  }
+}
+```
+
+Create una webApp, Darle un nombre, no habilitar el Hosting,
+Click en Register App, Copiar la config de fireBase, y pegarla
+en la config en el archivo de config de firebase, ahora tendremos
+2 config esta para Testing, la anterior para Desarrollo y deberiamos
+tener una tercera cuando querramos ser bien profesionales para Produccion
+
+### 5. Variables de entorno
+
+https://create-react-app.dev/docs/adding-custom-environment-variables
+
+## Section 23: MERN Calendar - Estructura y Diseño
+
+## Folder 09: journal-app
+
+Temas puntuales de la sección
+
+¿Qué veremos en esta sección?
+
+    Estructura y diseño de nuestra aplicación de Calendario
+
+    Uso de componentes de terceros
+
+    Modals
+
+    Configuración de Redux
+
+    CRUD local
+
+    Preparación de pantallas para futuras secciones
+
+    Uso de MomentJS
+
+    Manejo de fechas
+
+Esta sección es el inicio de nuestro MERN, (Mongo Express React Node), luego crearemos nuestro backend y después regresaremos a esta app para conectarla y desplegarla en producción
+
+### 1. Inicio de proyecto - MERN-Calendar
+
+https://getbootstrap.com/docs/4.5/getting-started/introduction/
+https://v5.reactrouter.com/web/guides/quick-start
+
+https://cdnjs.com/libraries/font-awesome
+
+### 2. React Big Calendar:
+
+https://www.npmjs.com/package/react-big-calendar
+
+### 3. Creando un modal sobre el calendario:
+
+https://www.npmjs.com/package/react-modal
+
+### 4. Contenido del EventModal
+
+https://www.npmjs.com/package/react-modal
+https://www.npmjs.com/package/react-datetime-picker
+
+### 5. Instalación y configuración de Redux
+
+https://www.npmjs.com/package/redux-thunk
+https://es.redux.js.org/
+https://react-redux.js.org/
